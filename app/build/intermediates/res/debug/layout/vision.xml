@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".85"
+        android:orientation="vertical">
+
+        <com.apollonarius.vampiredetector.VisionView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/overlay_buffer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"
+                android:background="@android:color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/ring_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".70"
+                android:clipChildren="false">
+
+                <ImageView
+                    android:id="@+id/outer_ring"
+                    android:contentDescription="outer orbiculus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/outer_ring_t"
+                    />
+
+                <com.apollonarius.vampiredetector.SpinView
+                    android:id="@+id/inner_ring"
+                    android:contentDescription="inner orbiculus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/inner_ring_t"
+                    custom:rotationDirection="clockwise"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"
+                android:background="@android:color/transparent"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.apollonarius.vampiredetector.CrawlView
+                    android:id="@+id/crawl_view_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="inits"
+                    android:textColor="@android:color/white" />
+
+                <com.apollonarius.vampiredetector.CrawlView
+                    android:id="@+id/crawl_view_z"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="inits"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/control_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".15"
+        android:background="@drawable/middle_frame"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/top_control_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/top_frame" />
+
+        <ImageView
+            android:id="@+id/bottom_control_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bottom_frame" />
+
+        <LinearLayout
+            android:id="@+id/button_pane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom_control_border"
+            android:layout_below="@id/top_control_border"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ToggleButton
+                android:id="@+id/button_a"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/button_a_toggle"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/button_b"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/button_b_toggle"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/button_c"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/button_c_toggle"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+<!-- From: file:/Users/michaelbruno/work/androidws/vampire-detector/app/src/main/res/layout/vision.xml -->

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" >
+        <shape android:shape="oval">
+            <size android:width="70dp" android:height="70dp"/>
+            <gradient
+                android:startColor="#750000"
+                android:endColor="#d90000"
+                android:angle="90" />
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <corners
+                android:radius="5dp" />
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true" >
+        <shape android:shape="oval">
+            <size android:width="70dp" android:height="70dp"/>
+            <gradient
+                android:startColor="#750000"
+                android:endColor="#d90000"
+                android:angle="90" />
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <corners
+                android:radius="5dp" />
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+
+    <item>        
+        <shape android:shape="oval">
+            <size android:width="70dp" android:height="70dp"/>
+            <gradient
+                android:startColor="#640000"
+                android:endColor="#aa0000"
+                android:angle="90" />
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <corners
+                android:radius="5dp" />
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+</selector>
+<!-- From: file:/Users/michaelbruno/work/androidws/vampire-detector/app/src/main/res/drawable/start_button.xml -->

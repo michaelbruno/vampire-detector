@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/michaelbruno/work/androidws/vampire-detector/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="lexicon_x">
+        <item>earth</item>
+        <item>flame</item>
+        <item>ether</item>
+        <item>water</item>
+        <item>metal</item>
+    </string-array>
+    <string-array name="lexicon_y">
+        <item>spheres</item>
+        <item>vacuums</item>
+        <item>pyramid</item>
+        <item>cylinder</item>
+    </string-array>
+    <string-array name="lexicon_z">
+        <item>dawn</item>
+        <item>days</item>
+        <item>dusk</item>
+        <item>night</item>
+    </string-array>
+    <declare-styleable name="CrawlView"><attr format="string" name="exampleString"/><attr format="dimension" name="exampleDimension"/><attr format="color" name="exampleColor"/><attr format="color|reference" name="exampleDrawable"/></declare-styleable>
+    <declare-styleable name="SpinView"><attr format="enum" name="rotationDirection"><enum name="clockwise" value="0"/><enum name="counterclockwise" value="1"/></attr></declare-styleable>
+    <string name="app_name">Vampire Detector</string>
+</resources>

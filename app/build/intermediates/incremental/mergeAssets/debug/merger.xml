@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/michaelbruno/work/androidws/vampire-detector/app/src/main/assets"><file name="enochian-v7.ttf" path="/Users/michaelbruno/work/androidws/vampire-detector/app/src/main/assets/enochian-v7.ttf"/><file name="inferno.txt" path="/Users/michaelbruno/work/androidws/vampire-detector/app/src/main/assets/inferno.txt"/></source></dataSet><dataSet config="debug"><source path="/Users/michaelbruno/work/androidws/vampire-detector/app/src/debug/assets"/></dataSet></merger>
