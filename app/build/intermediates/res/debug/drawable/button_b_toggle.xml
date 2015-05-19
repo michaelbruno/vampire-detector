@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:drawable="@drawable/button_b_on" />
-    <item android:state_checked="false" android:drawable="@drawable/button_b_off" />
-</selector><!-- From: file:/Users/michaelbruno/work/androidws/vampire-detector/app/src/main/res/drawable/button_b_toggle.xml -->
