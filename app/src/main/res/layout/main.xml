@@ -12,6 +12,7 @@
     android:layout_alignParentTop="true"
     android:layout_marginBottom="10dp"
     android:layout_marginLeft="10dp"
+    android:visibility="gone"
     />
 
     <com.apollonarius.vampiredetector.SpinView
@@ -46,6 +47,7 @@
         android:onClick="rateButton"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="10dp"
+        android:visibility="gone"
         />
 <!--
 <Button android:id="@+id/go_button" android:layout_width="fill_parent"

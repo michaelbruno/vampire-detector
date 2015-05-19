@@ -71,10 +71,10 @@ containing a value of this type.
         public static final int button_c_on=0x7f020008;
         public static final int button_c_toggle=0x7f020009;
         public static final int icon=0x7f02000a;
-        public static final int inner_ring=0x7f02000b;
+        public static final int inner_ring_t=0x7f02000b;
         public static final int main=0x7f02000c;
-        public static final int middle=0x7f02000d;
-        public static final int outer_ring=0x7f02000e;
+        public static final int middle_frame=0x7f02000d;
+        public static final int outer_ring_t=0x7f02000e;
         public static final int rate_button=0x7f02000f;
         public static final int start_button=0x7f020010;
         public static final int top_frame=0x7f020011;

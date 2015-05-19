@@ -51,7 +51,8 @@
                     android:layout_centerInParent="true"
                     android:background="@android:color/transparent"
                     android:gravity="center_horizontal"
-                    android:src="@drawable/outer_ring" />
+                    android:src="@drawable/outer_ring_t"
+                    />
 
                 <com.apollonarius.vampiredetector.SpinView
                     android:id="@+id/inner_ring"
@@ -61,8 +62,9 @@
                     android:layout_centerInParent="true"
                     android:background="@android:color/transparent"
                     android:gravity="center_horizontal"
-                    android:src="@drawable/inner_ring"
-                    custom:rotationDirection="clockwise" />
+                    android:src="@drawable/inner_ring_t"
+                    custom:rotationDirection="clockwise"
+                    />
 
             </RelativeLayout>
 
@@ -108,7 +110,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight=".15"
-        android:background="@drawable/middle"
+        android:background="@drawable/middle_frame"
         android:orientation="vertical">
 
         <ImageView
@@ -117,7 +119,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:adjustViewBounds="true"
-            android:scaleType="fitStart"
             android:src="@drawable/top_frame" />
 
         <ImageView
@@ -126,7 +127,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:adjustViewBounds="true"
-            android:scaleType="fitEnd"
             android:src="@drawable/bottom_frame" />
 
         <LinearLayout
