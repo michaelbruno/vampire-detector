@@ -2,5 +2,5 @@ Vampire Detector is a simple augmented reality app designed to demonstrate some 
 
 The latest release APK is available from Google Play:
 
-https://play.google.com/store/apps/details?id=com.apollonarius.vampiredetector&hl=en
+[https://play.google.com/store/apps/details?id=com.apollonarius.vampiredetector&hl=en](https://play.google.com/store/apps/details?id=com.apollonarius.vampiredetector&hl=en)
 
